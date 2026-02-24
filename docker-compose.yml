@@ -1,0 +1,10 @@
+services:
+  wr:
+    build:
+      context: .
+      dockerfile: Dockerfile.wr
+    volumes:
+      - .:/work
+    working_dir: /work
+    tty: true
+    stdin_open: true
